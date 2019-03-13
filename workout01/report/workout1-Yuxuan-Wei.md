@@ -59,6 +59,7 @@ Besides the total shots-made rate, let's look more closely on the 2-point and 3-
 Besides the hit rate and types of shot, What else can Durant do? Well, if you look at all the five key players' shot charts together as follows: </font>
 
 <div align=center>
+
 ### Shot Charts for Five Key Players of Warriors(2016-17 regular season)
 
 <img src="../images/gsw-shot-charts.png" width="80%" style="display: block; margin: auto;" />

@@ -1,3 +1,4 @@
+
 ---
 title: "Workout 1"
 author: "Yuxuan Wei"
@@ -5,7 +6,7 @@ output: github_document
 ---
 
 <div align=center>
-# Why Durant's trade make Goldon State Warriors' offensive play more unstoppable?
+#  Why Durant's trade make Goldon State Warriors' offensive play more unstoppable?
     
 ```{r echo=FALSE,results='hide',include=FALSE}
 library(dplyr)
@@ -66,6 +67,7 @@ Besides the hit rate and types of shot, What else can Durant do? Well, if you lo
 </font>
   
 <div align=center>
+  
 ### Shot Charts for Five Key Players of Warriors(2016-17 regular season)
 
 ```{r out.width='80%',echo=FALSE,fig.align='center'}
