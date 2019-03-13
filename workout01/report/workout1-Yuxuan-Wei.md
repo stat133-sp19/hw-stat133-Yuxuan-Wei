@@ -3,8 +3,10 @@ Workout 1
 Yuxuan Wei
 
 <div align=center>
-Why Durant's trade make Goldon State Warriors' offensive play more unstoppable?
-===============================================================================
+  
+  
+# Why Durant's trade make Goldon State Warriors' offensive play more unstoppable?
+
 
 <div align=left>
 <font size=4> Before Kevin Durant went to GSW, the team has already won a record-setting 73 regular games last season and is believed to be the best team of offensive play in the last 40 years. After Kevin Durant was traded to Warriors, most of the specialists and fans said that the Warriors' offensive play would be even more unstoppable, which did show up in the 2016-17 regular season. So why Durant's joining make the Warriors' offensive play even more historical? </font>
