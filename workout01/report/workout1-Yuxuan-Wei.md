@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Workout 1
 ================
 Yuxuan Wei
@@ -88,5 +87,3 @@ Everyone now would say, Durant's trade is a fantastic trade for the Warriors.
 
 </font>
 =======
-
->>>>>>> 499d51046f69b6f629e9e0b26f01606ad2d17690
