@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556296546267.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "552537028",
+    "id" : "DC34561C",
+    "lastKnownWriteTime" : 1556298777,
+    "last_content_update" : 1556298777912,
+    "path" : "C:/Users/a/Desktop/binomial/R/check.R",
+    "project_path" : "R/check.R",
+    "properties" : {
+        "cursorPosition" : "63,0",
+        "scrollLine" : "41"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
