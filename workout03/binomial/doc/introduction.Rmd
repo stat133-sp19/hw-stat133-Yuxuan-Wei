@@ -1,0 +1,95 @@
+---
+title: "Introduction to the package binomial"
+author: "Yuxuan Wei"
+date: "2019/04/30"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r,echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(binomial)
+```
+
+## Overview
+The package `"binomial"` is a package that implements functions for calculating probabilities of a binomial random variable, and relate calculations.
+
+##function bin_choose
+This function calculates the number of combinations in which k successes can occur in n trials. The function take two arguments as `k`(integer number represents successes) and `n`(integer number represents trials) and return an integer as combinations. The function will check input and return errors for several invalid input like non-integer or k>n. Here are some examples for how to use this function.
+```{r}
+bin_choose(n=5L,k=2L)
+bin_choose(5L,0L)
+bin_choose(5L,1L:3L)
+```
+
+
+##function bin_probability
+This function calculates the probability of combinations in which k successes can occur in n trials. The function take three arguments as `success`(integer number represents successes) ,`trials`(integer number represents trials) and `prob`(probability of success in one trial) and return the probability. The function will check input and return errors for several invalid input like non-integer or success>trials or prob>1 or prob<0. Here are some examples for how to use this function.
+```{r}
+bin_probability(success=2L,trials=5L,prob=0.5)
+bin_probability(success=0L:2L,trials=5L,prob=0.5)
+bin_probability(success=55L,trials=100L,prob=0.45)
+```
+
+##function bin_distribution
+This function calculates the pribability distribution of all the possible successes of combinations can occur in n trials. The function take two arguments as `trials`(integer number represents trials) and `prob`(probability of success in one trial).The function will output an object of class `bindis`,which contains a dataframe as distribution. The function will check input and return errors for several invalid input like non-integer trials or prob>1 or prob<0. Here are some examples for how to use this function.
+```{r}
+bin_distribution(trials=5L,prob=0.5)
+```
+You can use plot method for class `bindis` to get a hisgram of the distribution:
+```{r}
+dis1<-bin_distribution(trials=5L,prob=0.5)
+plot(dis1)
+```
+
+##function bin_cumulative
+This function calculates the cumulative probability distribution of all the possible successes of combinations can occur in n trials. The function take two arguments as `trials`(integer number represents trials) and `prob`(probability of success in one trial).The function will output an object of class `bincum`,which contains a dataframe as the cumulative probability distribution. The function will check input and return errors for several invalid input like non-integer trials or prob>1 or prob<0. Here are some examples for how to use this function.
+```{r}
+bin_cumulative(trials=5L,prob=0.5)
+```
+You can use plot method for class `bincum` to get a linegraph of the cumulative probability distribution:
+```{r}
+dis2<-bin_cumulative(trials=5L,prob=0.5)
+plot(dis2)
+```
+
+##function bin_variable
+This function take two arguments as `trials`(integer number represents trials) and `prob`(probability of success in one trial).The function will output a binomial random variable object of class `binvar`,which contains a list of named elements(trials and prob). The function will check input and return errors for several invalid input like non-integer trials or prob>1 or prob<0. Here are some examples for how to use this function.
+```{r}
+bin_variable(trials=10L,prob=0.3)
+```
+You can use print method for class `binvar` to print the content of the object:
+```{r}
+bin1<-bin_variable(trials=10L,prob=0.3)
+bin1
+```
+You can use summary method for class `binvar` to get an object of class `summary.binvar`, which contains a list of calculations as named elements(trials,prob,mean,variance,mode,skewness,kurtosis):
+```{r}
+bin1<-bin_variable(trials=10L,prob=0.3)
+summary(bin1)
+```
+Then you can use print method for class `summary.binvar` to print the content of the object:
+
+```{r}
+bin1<-bin_variable(trials=10L,prob=0.3)
+binsum1<-summary(bin1)
+binsum1
+```
+
+##function of methods
+The package also contains some calculations(functions) which related to binomial. These summary function as bin_mean,bin_variance,bin_mode,bin_skewness,bin_kurtosis all take two arguments as `trials`(integer number represents trials) and `prob`(probability of success in one trial). These functions will return the value of mean,variance,mode,skewness and kurtosis for the binomial. These functions will check input and return errors for several invalid input like non-integer trials or prob>1 or prob<0. Here are some examples for how to use these functions.
+```{r}
+bin_mean(trials=10L,prob=0.3)
+bin_variance(trials=10L,prob=0.3)
+bin_mode(trials=10L,prob=0.3)
+bin_skewness(trials=10L,prob=0.3)
+bin_kurtosis(trials=10L,prob=0.3)
+```
+
+
