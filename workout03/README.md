@@ -24,10 +24,10 @@ Install the development version from GitHub via the package
 #install.packages("devtools") 
 
 # install "binomial" (without vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-Yuxuan-Wei/tree/master/workout03")
+devtools::install_github("stat133-sp19/hw-stat133-Yuxuan-Wei/workout03")
 
 # install "binomial" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-Yuxuan-Wei/tree/master/workout03", build_vignettes = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-Yuxuan-Wei/workout03", build_vignettes = TRUE)
 ```
 
 ## Usage
