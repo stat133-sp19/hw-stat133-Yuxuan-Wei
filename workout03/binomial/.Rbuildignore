@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 ^devtools-flow.R
 ^README.md
+^doc$
+^Meta$

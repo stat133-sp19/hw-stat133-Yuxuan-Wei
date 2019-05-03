@@ -27,6 +27,7 @@ Install the development version from GitHub via the package
 devtools::install_github("stat133-sp19/hw-stat133-Yuxuan-Wei/workout03/binomial")
 
 # install "binomial" (with vignettes)
+devtools::install_github("stat133-sp19/hw-stat133-Yuxuan-Wei/workout03/binomial",build = TRUE,build_opts = c())
 devtools::install_github("stat133-sp19/hw-stat133-Yuxuan-Wei/workout03/binomial", build_vignettes = TRUE)
 ```
 
